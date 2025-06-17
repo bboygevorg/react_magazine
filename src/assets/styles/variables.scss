@@ -1,5 +1,8 @@
-// #region Colors
+@use "sass:color";
+@use "sass:math";
+@use "sass:list";
 
+// #region Colors
 $black: #000000;
 $ping: #e2066d;
 $white: #ffffff;
@@ -29,9 +32,8 @@ $purple: #8b004f;
 $dark: #232733;
 
 // #region Alternative styles
-$gradient: linear-gradient(to right, #03c4b5, $el-blue);
 $shadow: 0px -3px 14px #00000012;
-// $error-shadow: 0 0 15px color.adjust($red, 0.6);
+$error-shadow: 0 0 15px color.adjust($red, $lightness: 20%);
 $blue-shadow: 0 0 40px rgba($blue, 0.2);
 $blue-dark-shadow: 0 0 40px rgba($blue, 0.4);
 $radius: 3px;

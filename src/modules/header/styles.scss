@@ -1,8 +1,41 @@
+@use "../../assets/styles/variables.scss" as vars;
+
 .P-header {
   position: fixed;
-  z-index: $modal-z;
+  z-index: vars.$modal-z;
   width: 100vw;
   left: 0;
   height: 134px;
   background: #ffffff 0 0 no-repeat padding-box;
+}
+
+.P-topHeader {
+  height: 56px;
+  background: #fbfbfb 0 0 no-repeat padding-box;
+  font-size: calc(10px + 0.3vw);
+
+  @media only screen and (max-width: 750px) {
+    font-size: calc(7px + 0.3vw);
+  }
+}
+
+.P-bottomHeader {
+  height: 76px;
+
+  @media only screen and (max-width: 800px) {
+    img {
+      height: 30px;
+    }
+  }
+}
+
+.P-headerRightContet {
+  padding-left: 10px;
+
+  span {
+    padding-left: 20px;
+    cursor: pointer;
+    letter-spacing: 0;
+    color: vars.$black;
+  }
 }

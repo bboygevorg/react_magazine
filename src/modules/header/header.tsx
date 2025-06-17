@@ -1,14 +1,12 @@
 import React from "react";
 import "./styles.scss";
+import ProjectLogo from "../../assets/svg/logo.svg";
+import { SearchModal } from "../../components/modals/search";
 
 const Header = () => {
   return (
     <div>
-      <div>SearchModal</div>
-      <div>LogoutModal</div>
-      <div className="P-header ">
-        <div>Basket</div>
-      </div>
+      <SearchModal />
     </div>
   );
 };
