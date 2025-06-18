@@ -1,0 +1,36 @@
+@use "../../assets/styles/variables.scss" as vars;
+
+.P-input {
+  position: relative;
+}
+
+.P-input-search-full-screen {
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    color: vars.$gray;
+  }
+
+  input {
+    padding-left: 50px;
+    background: vars.$white;
+    border-radius: 1px;
+    border-bottom: 1px solid vars.$light-2;
+    &::-webkit-input-placeholder {
+      font-size: 20px;
+      line-height: 3;
+    }
+  }
+}
+
+input[type="text"].P-pi-20,
+input[type="password"].P-pi-20,
+button.P-pi-20 {
+  padding: 14px;
+}
+
+input.P-ri-45 {
+  padding-right: 45px;
+}

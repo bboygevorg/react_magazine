@@ -1,0 +1,11 @@
+.P-search-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .P-logo-img {
+    height: 50px;
+    width: 120px;
+    margin-bottom: 20px;
+  }
+}
